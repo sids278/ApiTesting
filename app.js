@@ -1,14 +1,14 @@
 const express=require('express')
 const app=express()
-const port=8000
+const port=3000
 
-app.get('/',(req,res)=>res.json([
+app.get('/get',(req,res)=>res.json([
     {
-        name:'sid',
-        gf:'anusha'
+        name:'sid'
     }
 ]))
 
 app.listen(port,()=>{
     console.log('im seeing this shit')
 })
+module.exports = app
